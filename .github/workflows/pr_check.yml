@@ -8,6 +8,7 @@ jobs:
     strategy:
       matrix:
         java: [
+            8,
             11,  # LTS
             16,  # Latest
         ]
