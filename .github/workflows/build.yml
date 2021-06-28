@@ -9,7 +9,6 @@ jobs:
     strategy:
       matrix:
         java: [
-          8,
           11,  # LTS
           16,  # Latest
         ]
@@ -41,7 +40,7 @@ jobs:
           wrapper-cache-enabled: true
           dependencies-cache-enabled: true
       - name: Capture build artifacts
-        if: ${{ runner.os == 'Linux' && matrix.java == '8' }}
+        if: ${{ runner.os == 'Linux' && matrix.java == '11' }}
         uses: actions/upload-artifact@v2
         with:
           name: Galacticraft
@@ -50,5 +49,5 @@ jobs:
             !build/libs/*-sources.jar
             !build/libs/*-dev.jar
       - name: Perform CodeQL Analysis
-        if: ${{ runner.os == 'Linux' && matrix.java == '8' }}
+        if: ${{ runner.os == 'Linux' && matrix.java == '11' }}
         uses: github/codeql-action/analyze@v1
