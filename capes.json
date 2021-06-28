@@ -539,6 +539,11 @@
             "uuid": "01d916c8-4932-4f54-8ab4-c49e6cd8bbf8",
             "cape": "developer",
             "name": "NBH_iNewHorizons"
+        },
+        {
+            "uuid": "2fdb9174-c6d7-4842-8172-7d009a30fe6a",
+            "cape": "developer",
+            "name": "Jab125"
         }
     ]
 }
